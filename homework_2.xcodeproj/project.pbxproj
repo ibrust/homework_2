@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A20FED7254605D4009AA372 /* cell_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20FED6254605D4009AA372 /* cell_data.swift */; };
 		3AE04AC023BC25A80035F67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04ABF23BC25A80035F67E /* AppDelegate.swift */; };
 		3AE04AC223BC25A80035F67E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AC123BC25A80035F67E /* SceneDelegate.swift */; };
-		3AE04AC423BC25A80035F67E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AC323BC25A80035F67E /* ViewController.swift */; };
 		3AE04AC723BC25A80035F67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE04AC523BC25A80035F67E /* Main.storyboard */; };
 		3AE04ACA23BC25A80035F67E /* homework_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AC823BC25A80035F67E /* homework_2.xcdatamodeld */; };
 		3AE04ACC23BC25AC0035F67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE04ACB23BC25AC0035F67E /* Assets.xcassets */; };
 		3AE04ACF23BC25AC0035F67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE04ACD23BC25AC0035F67E /* LaunchScreen.storyboard */; };
+		3AE04AE323BC52650035F67E /* custom_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AE123BC52650035F67E /* custom_cell.swift */; };
+		3AE04AE423BC52660035F67E /* custom_cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE04AE223BC52650035F67E /* custom_cell.xib */; };
+		3AE04AE823BC59AB0035F67E /* custom_nav_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AE723BC59AB0035F67E /* custom_nav_controller.swift */; };
+		3AE04AEC23BC71A20035F67E /* custom_table_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AEB23BC71A20035F67E /* custom_table_controller.swift */; };
+		3AE04AEF23BCAB970035F67E /* custom_detail_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE04AEE23BCAB970035F67E /* custom_detail_controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A20FED6254605D4009AA372 /* cell_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell_data.swift; sourceTree = "<group>"; };
 		3AE04ABC23BC25A80035F67E /* homework_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homework_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE04ABF23BC25A80035F67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE04AC123BC25A80035F67E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AE04AC323BC25A80035F67E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AE04AC623BC25A80035F67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AE04AC923BC25A80035F67E /* homework_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homework_2.xcdatamodel; sourceTree = "<group>"; };
 		3AE04ACB23BC25AC0035F67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AE04ACE23BC25AC0035F67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AE04AD023BC25AC0035F67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE04AE123BC52650035F67E /* custom_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_cell.swift; sourceTree = "<group>"; };
+		3AE04AE223BC52650035F67E /* custom_cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = custom_cell.xib; sourceTree = "<group>"; };
+		3AE04AE723BC59AB0035F67E /* custom_nav_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_nav_controller.swift; sourceTree = "<group>"; };
+		3AE04AEB23BC71A20035F67E /* custom_table_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_table_controller.swift; sourceTree = "<group>"; };
+		3AE04AEE23BCAB970035F67E /* custom_detail_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_detail_controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A20FED525460595009AA372 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3A20FED6254605D4009AA372 /* cell_data.swift */,
+				3AE04ACB23BC25AC0035F67E /* Assets.xcassets */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		3AE04AB323BC25A70035F67E = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +77,44 @@
 		3AE04ABE23BC25A80035F67E /* homework_2 */ = {
 			isa = PBXGroup;
 			children = (
+				3A20FED525460595009AA372 /* model */,
+				3AE04AD923BC366E0035F67E /* controller */,
+				3AE04AD823BC365D0035F67E /* view */,
+				3AE04AD723BC36450035F67E /* utilities */,
+			);
+			path = homework_2;
+			sourceTree = "<group>";
+		};
+		3AE04AD723BC36450035F67E /* utilities */ = {
+			isa = PBXGroup;
+			children = (
 				3AE04ABF23BC25A80035F67E /* AppDelegate.swift */,
 				3AE04AC123BC25A80035F67E /* SceneDelegate.swift */,
-				3AE04AC323BC25A80035F67E /* ViewController.swift */,
-				3AE04AC523BC25A80035F67E /* Main.storyboard */,
-				3AE04ACB23BC25AC0035F67E /* Assets.xcassets */,
-				3AE04ACD23BC25AC0035F67E /* LaunchScreen.storyboard */,
 				3AE04AD023BC25AC0035F67E /* Info.plist */,
 				3AE04AC823BC25A80035F67E /* homework_2.xcdatamodeld */,
 			);
-			path = homework_2;
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		3AE04AD823BC365D0035F67E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3AE04AC523BC25A80035F67E /* Main.storyboard */,
+				3AE04ACD23BC25AC0035F67E /* LaunchScreen.storyboard */,
+				3AE04AE123BC52650035F67E /* custom_cell.swift */,
+				3AE04AE223BC52650035F67E /* custom_cell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3AE04AD923BC366E0035F67E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AE04AE723BC59AB0035F67E /* custom_nav_controller.swift */,
+				3AE04AEB23BC71A20035F67E /* custom_table_controller.swift */,
+				3AE04AEE23BCAB970035F67E /* custom_detail_controller.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +176,7 @@
 			files = (
 				3AE04ACF23BC25AC0035F67E /* LaunchScreen.storyboard in Resources */,
 				3AE04ACC23BC25AC0035F67E /* Assets.xcassets in Resources */,
+				3AE04AE423BC52660035F67E /* custom_cell.xib in Resources */,
 				3AE04AC723BC25A80035F67E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE04AE823BC59AB0035F67E /* custom_nav_controller.swift in Sources */,
+				3AE04AE323BC52650035F67E /* custom_cell.swift in Sources */,
 				3AE04ACA23BC25A80035F67E /* homework_2.xcdatamodeld in Sources */,
-				3AE04AC423BC25A80035F67E /* ViewController.swift in Sources */,
+				3A20FED7254605D4009AA372 /* cell_data.swift in Sources */,
 				3AE04AC023BC25A80035F67E /* AppDelegate.swift in Sources */,
+				3AE04AEF23BCAB970035F67E /* custom_detail_controller.swift in Sources */,
 				3AE04AC223BC25A80035F67E /* SceneDelegate.swift in Sources */,
+				3AE04AEC23BC71A20035F67E /* custom_table_controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = homework_2/Info.plist;
+				INFOPLIST_FILE = homework_2/utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = homework_2/Info.plist;
+				INFOPLIST_FILE = homework_2/utilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
