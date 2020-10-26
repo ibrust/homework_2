@@ -121,6 +121,7 @@
                     <connections>
                         <outlet property="details_image" destination="s7Q-1P-Ft3" id="KlH-44-Srb"/>
                         <outlet property="paragraph_label" destination="PEU-ks-FxW" id="0Q8-iI-fgY"/>
+                        <outlet property="seg_control_outlet" destination="hfP-6A-JTa" id="TS4-Xl-330"/>
                         <outlet property="test_label" destination="YLZ-Xh-9Vp" id="csV-hE-l8X"/>
                     </connections>
                 </viewController>

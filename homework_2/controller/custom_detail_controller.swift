@@ -48,6 +48,9 @@ class custom_detail_controller: UIViewController{
         configure_detail()
     }
     
+    @IBOutlet weak var seg_control_outlet: UISegmentedControl!
+    
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         configure_detail()
@@ -59,6 +62,35 @@ class custom_detail_controller: UIViewController{
         self.details_image.image = array_of_cell_data[bound_id].cell_image
         self.paragraph_label.text = array_of_cell_data[bound_id].sub_label_text
         self.view.backgroundColor = array_of_cell_data[bound_id].background_color
+        
+        let correct_control: Int
+        let current_shape = array_of_cell_data[bound_id].shape
+        switch current_shape{
+        case .circle:
+            correct_control = 0
+        case .crescent:
+            correct_control = 1
+        case .cube:
+            correct_control = 2
+        case .hexagon:
+            correct_control = 3
+        case .triangle:
+            correct_control = 4
+        case .pentagon:
+            correct_control = 5
+        case .pyramid:
+            correct_control = 6
+        case .rectangle:
+            correct_control = 7
+        case .sphere:
+            correct_control = 8
+        case .square:
+            correct_control = 9
+        case .star:
+            correct_control = 10
+        }
+        
+        self.seg_control_outlet.selectedSegmentIndex = correct_control
     }
 }
 
