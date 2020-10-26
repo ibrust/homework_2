@@ -38,6 +38,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLZ-Xh-9Vp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="34"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="h4o-xv-i1v"/>
                                     <constraint firstAttribute="height" constant="34" id="rar-YP-0wn"/>
                                 </constraints>
                                 <attributedString key="attributedText">
@@ -51,39 +52,68 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-ks-FxW">
-                                <rect key="frame" x="0.0" y="78" width="414" height="364"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-cW-cMx">
+                                <rect key="frame" x="0.0" y="78" width="414" height="749"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-ks-FxW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="364" id="oCP-z7-XDA"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="paragraph about the shape">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="18" name="Copperplate"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-1P-Ft3">
+                                        <rect key="frame" x="0.0" y="385" width="414" height="364"/>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="364" id="oCP-z7-XDA"/>
+                                    <constraint firstItem="s7Q-1P-Ft3" firstAttribute="height" secondItem="PEU-ks-FxW" secondAttribute="height" id="Ub3-jB-7eu"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="A paragraph about the shape. It will be long, hopefully take up most the screen and still be readable behind the shape ">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="20" name="Copperplate-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-1P-Ft3">
-                                <rect key="frame" x="0.0" y="442" width="414" height="420"/>
-                            </imageView>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hfP-6A-JTa">
+                                <rect key="frame" x="0.0" y="827" width="414" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iZn-XP-7t3"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="circle"/>
+                                    <segment title="" image="crescent"/>
+                                    <segment title="" image="cube"/>
+                                    <segment title="" image="hexagon"/>
+                                    <segment title="" image="triangle"/>
+                                    <segment title="" image="pentagon"/>
+                                    <segment title="" image="pyramid"/>
+                                    <segment title="" image="rectangle"/>
+                                    <segment title="" image="sphere"/>
+                                    <segment title="" image="square"/>
+                                    <segment title="" image="star"/>
+                                </segments>
+                                <connections>
+                                    <action selector="seg_handler:" destination="23p-xQ-Rbz" eventType="valueChanged" id="ZQC-6D-cxa"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jub-yK-wdI"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="PEU-ks-FxW" firstAttribute="top" secondItem="YLZ-Xh-9Vp" secondAttribute="bottom" id="2eo-ul-1jm"/>
-                            <constraint firstItem="PEU-ks-FxW" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="B7Y-Xa-EY0"/>
-                            <constraint firstItem="s7Q-1P-Ft3" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="EOi-Hq-kd1"/>
-                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="H7l-FS-lpI"/>
-                            <constraint firstItem="s7Q-1P-Ft3" firstAttribute="trailing" secondItem="jub-yK-wdI" secondAttribute="trailing" id="dUI-Q8-tKg"/>
-                            <constraint firstItem="s7Q-1P-Ft3" firstAttribute="top" secondItem="PEU-ks-FxW" secondAttribute="bottom" id="f9H-OM-9hz"/>
-                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="trailing" secondItem="jub-yK-wdI" secondAttribute="trailing" id="fwb-jF-X9B"/>
-                            <constraint firstItem="s7Q-1P-Ft3" firstAttribute="bottom" secondItem="jub-yK-wdI" secondAttribute="bottom" id="q3n-Wc-EiK"/>
-                            <constraint firstItem="PEU-ks-FxW" firstAttribute="trailing" secondItem="jub-yK-wdI" secondAttribute="trailing" id="qJi-Fk-88y"/>
-                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="top" secondItem="jub-yK-wdI" secondAttribute="top" id="wc8-6U-ZTv"/>
+                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="51F-qr-v7B"/>
+                            <constraint firstItem="hfP-6A-JTa" firstAttribute="trailing" secondItem="jub-yK-wdI" secondAttribute="trailing" id="5HH-hP-e9C"/>
+                            <constraint firstItem="hfP-6A-JTa" firstAttribute="bottom" secondItem="jub-yK-wdI" secondAttribute="bottom" id="GrQ-sk-0Bb"/>
+                            <constraint firstItem="Pca-cW-cMx" firstAttribute="top" secondItem="YLZ-Xh-9Vp" secondAttribute="bottom" id="JIs-R3-Lp9"/>
+                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="trailing" secondItem="jub-yK-wdI" secondAttribute="trailing" id="K75-zb-gGs"/>
+                            <constraint firstItem="hfP-6A-JTa" firstAttribute="top" secondItem="Pca-cW-cMx" secondAttribute="bottom" id="MsW-eH-Eob"/>
+                            <constraint firstItem="Pca-cW-cMx" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="QGz-xT-a6F"/>
+                            <constraint firstAttribute="trailing" secondItem="Pca-cW-cMx" secondAttribute="trailing" id="Uzf-xv-ZQX"/>
+                            <constraint firstItem="hfP-6A-JTa" firstAttribute="leading" secondItem="jub-yK-wdI" secondAttribute="leading" id="aQ7-y9-dMD"/>
+                            <constraint firstItem="YLZ-Xh-9Vp" firstAttribute="top" secondItem="jub-yK-wdI" secondAttribute="top" id="pRr-ig-YVR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IOa-be-Hxe"/>
@@ -115,6 +145,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle" width="128" height="128"/>
+        <image name="crescent" width="512" height="512"/>
+        <image name="cube" width="128" height="128"/>
+        <image name="hexagon" width="64" height="64"/>
+        <image name="pentagon" width="64" height="64"/>
+        <image name="pyramid" width="64" height="64"/>
+        <image name="rectangle" width="64" height="64"/>
+        <image name="sphere" width="128" height="128"/>
+        <image name="square" width="64" height="64"/>
+        <image name="star" width="64" height="64"/>
+        <image name="triangle" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
