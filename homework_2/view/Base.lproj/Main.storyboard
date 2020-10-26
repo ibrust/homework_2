@@ -96,6 +96,7 @@
                                     <segment title="" image="square"/>
                                     <segment title="" image="star"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.76970970812182737" green="0.75324348258904628" blue="0.41399695524820196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="seg_handler:" destination="23p-xQ-Rbz" eventType="valueChanged" id="ZQC-6D-cxa"/>
                                 </connections>
