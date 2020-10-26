@@ -17,6 +17,8 @@ class custom_detail_controller: UIViewController{
     
     @IBOutlet weak var details_image: UIImageView!
     
+    @IBOutlet weak var time_label: UILabel!
+    
     @IBAction func seg_handler(_ sender: UISegmentedControl) {
         guard let bound_id = detail_id else{return}
         switch sender.selectedSegmentIndex{
@@ -62,6 +64,7 @@ class custom_detail_controller: UIViewController{
         self.details_image.image = array_of_cell_data[bound_id].cell_image
         self.paragraph_label.text = array_of_cell_data[bound_id].sub_label_text
         self.view.backgroundColor = array_of_cell_data[bound_id].background_color
+        self.time_label.text = array_of_cell_data[bound_id].last_modified
         
         let correct_control: Int
         let current_shape = array_of_cell_data[bound_id].shape

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Table Of Shapes-->
         <scene sceneID="hLl-nI-gSB">
             <objects>
                 <tableViewController id="7ul-5M-cFl" customClass="custom_table_controller" customModule="homework_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                             <outlet property="delegate" destination="7ul-5M-cFl" id="dhl-iz-e0x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1Ru-LL-uPK"/>
+                    <navigationItem key="navigationItem" title="Table Of Shapes" id="1Ru-LL-uPK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tco-tj-cuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,10 +53,25 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-cW-cMx">
-                                <rect key="frame" x="0.0" y="78" width="414" height="749"/>
+                                <rect key="frame" x="0.0" y="78" width="414" height="790.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-eZ-dZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="uPy-an-Ut1"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="11" name="Copperplate"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-ks-FxW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="414" height="364"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="364" id="oCP-z7-XDA"/>
                                         </constraints>
@@ -64,22 +79,26 @@
                                             <fragment content="paragraph about the shape">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="18" name="Copperplate"/>
+                                                    <font key="NSFont" size="17" name="Copperplate"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-1P-Ft3">
-                                        <rect key="frame" x="0.0" y="385" width="414" height="364"/>
+                                        <rect key="frame" x="0.0" y="426.5" width="414" height="364"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="s7Q-1P-Ft3" firstAttribute="height" secondItem="PEU-ks-FxW" secondAttribute="height" id="Ub3-jB-7eu"/>
+                                    <constraint firstItem="Ugh-eZ-dZH" firstAttribute="leading" secondItem="Pca-cW-cMx" secondAttribute="leading" id="Y1Q-5R-9hX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ugh-eZ-dZH" secondAttribute="trailing" id="bbF-GJ-MB6"/>
+                                    <constraint firstItem="Ugh-eZ-dZH" firstAttribute="top" secondItem="Pca-cW-cMx" secondAttribute="top" id="p8x-Ka-Lb3"/>
                                 </constraints>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hfP-6A-JTa">
-                                <rect key="frame" x="0.0" y="827" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="868.5" width="414" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="iZn-XP-7t3"/>
                                 </constraints>
@@ -123,6 +142,7 @@
                         <outlet property="paragraph_label" destination="PEU-ks-FxW" id="0Q8-iI-fgY"/>
                         <outlet property="seg_control_outlet" destination="hfP-6A-JTa" id="TS4-Xl-330"/>
                         <outlet property="test_label" destination="YLZ-Xh-9Vp" id="csV-hE-l8X"/>
+                        <outlet property="time_label" destination="Ugh-eZ-dZH" id="imc-dk-fLP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NM4-9A-vtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

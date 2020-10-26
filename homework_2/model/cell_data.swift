@@ -35,7 +35,7 @@ struct cell_data{
         case .triangle:
             cell_image = UIImage(named: "triangle")!
             main_label_text = "Triangle"
-            sub_label_text = "In Euclidean geometry, any three points, when non-collinear, determine a unique triangle and simultaneously, a unique plane (i.e. a two-dimensional Euclidean space). In other words, there is only one plane that contains that triangle, and every triangle is contained in some plane. If the entire geometry is only the Euclidean plane, there is only one plane and all triangles are contained in it; however, in higher-dimensional Euclidean spaces, this is no longer true."
+            sub_label_text = "In Euclidean geometry, any three points, when non-collinear, determine a unique triangle and simultaneously, a unique plane (i.e. a two-dimensional Euclidean space). In other words, there is only one plane that contains that triangle, and every triangle is contained in some plane."
             background_color = RGB_to_UIColor(red: 221, green: 111, blue: 13)
         case .square:
             cell_image = UIImage(named: "square")!
@@ -45,7 +45,7 @@ struct cell_data{
         case .rectangle:
             cell_image = UIImage(named: "rectangle")!
             main_label_text = "Rectangle"
-            sub_label_text = "In Euclidean plane geometry, a rectangle is a quadrilateral with four right angles. It can also be defined as an equiangular quadrilateral, since equiangular means that all of its angles are equal (360°/4 = 90°). It can also be defined as a parallelogram containing a right angle. A rectangle with four sides of equal length is a square. The term oblong is occasionally used to refer to a non-square rectangle."
+            sub_label_text = "In Euclidean plane geometry, a rectangle is a quadrilateral with four right angles. It can also be defined as an equiangular quadrilateral, since equiangular means that all of its angles are equal (360°/4 = 90°). It can also be defined as a parallelogram containing a right angle. A rectangle with four sides of equal length is a square."
             background_color = RGB_to_UIColor(red: 12, green: 74, blue: 72)
         case .pentagon:
             cell_image = UIImage(named: "pentagon")!
@@ -60,22 +60,22 @@ struct cell_data{
         case .hexagon:
             cell_image = UIImage(named: "hexagon")!
             main_label_text = "Hexagon"
-            sub_label_text = "In geometry, a hexagon (from Greek ἕξ hex, 'six' and γωνία, gonía, 'corner, angle') is a six-sided polygon or 6-gon. The total of the internal angles of any simple (non-self-intersecting) hexagon is 720°. A regular hexagon is defined as a hexagon that is both equilateral and equiangular. It is bicentric, meaning that it is both cyclic (has a circumscribed circle) and tangential (has an inscribed circle)."
+            sub_label_text = "In geometry, a hexagon (from Greek ἕξ hex, 'six' and γωνία, gonía, 'corner, angle') is a six-sided polygon or 6-gon. The total of the internal angles of any simple (non-self-intersecting) hexagon is 720°. A regular hexagon is defined as a hexagon that is both equilateral and equiangular."
             background_color = RGB_to_UIColor(red: 44, green: 44, blue: 105)
         case .sphere:
             cell_image = UIImage(named: "sphere")!
             main_label_text = "Sphere"
-            sub_label_text = "A sphere (from Greek σφαῖρα—sphaira, 'globe, ball') is a geometrical object in three-dimensional space that is the surface of a ball (viz., analogous to the circular objects in two dimensions, where a 'circle' circumscribes its 'disk'). Like a circle in a two-dimensional space, a sphere is defined mathematically as the set of points that are all at the same distance r from a given point in a three-dimensional space. This distance r is the radius of the ball."
+            sub_label_text = "A sphere (from Greek σφαῖρα—sphaira, 'globe, ball') is a geometrical object in three-dimensional space that is the surface of a ball. A sphere is defined mathematically as the set of points that are all at the same distance r from a given point in a three-dimensional space."
             background_color = RGB_to_UIColor(red: 85, green: 87, blue: 118)
         case .cube:
             cell_image = UIImage(named: "cube")!
             main_label_text = "Cube"
-            sub_label_text = "In geometry, a cube is a three-dimensional solid object bounded by six square faces, facets or sides, with three meeting at each vertex. The cube is the only regular hexahedron and is one of the five Platonic solids. It has 6 faces, 12 edges, and 8 vertices. The cube is also a square parallelepiped, an equilateral cuboid and a right rhombohedron. It is a regular square prism in three orientations, and a trigonal trapezohedron in four orientations."
+            sub_label_text = "In geometry, a cube is a three-dimensional solid object bounded by six square faces, facets or sides, with three meeting at each vertex. The cube is the only regular hexahedron and is one of the five Platonic solids. It has 6 faces, 12 edges, and 8 vertices. The cube is also a square parallelepiped, an equilateral cuboid and a right rhombohedron."
             background_color = RGB_to_UIColor(red: 180, green: 123, blue: 248)
         case .pyramid:
             cell_image = UIImage(named: "pyramid")!
             main_label_text = "Pyramid"
-            sub_label_text = "In geometry, a pyramid is a polyhedron formed by connecting a polygonal base and a point, called the apex. Each base edge and apex form a triangle, called a lateral face. It is a conic solid with polygonal base. A pyramid with an n-sided base has n + 1 vertices, n + 1 faces, and 2n edges. All pyramids are self-dual. A right pyramid has its apex directly above the centroid of its base. Nonright pyramids are called oblique pyramids."
+            sub_label_text = "In geometry, a pyramid is a polyhedron formed by connecting a polygonal base and a point, called the apex. Each base edge and apex form a triangle, called a lateral face. It is a conic solid with polygonal base. A pyramid with an n-sided base has n + 1 vertices, n + 1 faces, and 2n edges. All pyramids are self-dual."
             background_color = RGB_to_UIColor(red: 139, green: 186, blue: 120)
         }
     }
@@ -123,9 +123,9 @@ func get_current_time() -> String {
     let now = Date()
     let formatter = DateFormatter()
     formatter.timeZone = TimeZone.current
-    formatter.dateFormat = "MM-dd HH:mm:ss"
+    formatter.dateFormat = "HH:mm:ss"
     let dateString = formatter.string(from: now)
-    return dateString
+    return "updated " + dateString
 }
 
 
